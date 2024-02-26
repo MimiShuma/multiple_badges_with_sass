@@ -1,0 +1,56 @@
+@import "mixins";
+@import "variables";
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+.tag-badge {
+    margin-bottom: 0.5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+
+    .badge-secondary {
+        @include btn-badge;
+        color: $badge-secondary-font-color;
+        background-color: $badge-secondary-bg-color;
+        border-color: $badge-secondary-border-color;
+    }
+}
+
+.btn-primary {
+    @include btn;
+    background-color: $btn-badge-bg-color;
+    border-color: $btn-badge-border-color;
+    color: $btn-badge-font-color;
+
+    .badge-light {
+        @include btn-badge;
+        color: $btn-badge-light-font-color;
+        background-color: $btn-badge-light-bg-color;
+        border-color: $btn-badge-light-border-color;
+    }
+}
